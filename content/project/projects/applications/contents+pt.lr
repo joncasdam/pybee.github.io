@@ -1,0 +1,9 @@
+_model: project-type
+---
+title: Aplicações
+---
+short_description: Ferramentas standalone para usuário final
+---
+sort_key: 1
+---
+description: Aplicações são as aplicações que visam de forma independente o usuário final. Embora sejam aplicações escritas em Python, esse é um apenas detalhe de implementação - não é ser um fato do qual você deva estar ciente. Aplicações são instaladas e executadas da mesma forma que qualquer outra aplicação para usuário final em seu computador.

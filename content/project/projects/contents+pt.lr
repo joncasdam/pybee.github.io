@@ -1,0 +1,11 @@
+_model: page
+---
+_template: pt_BR/projects.html
+---
+title: Projetos
+---
+summary: Do que é feito o projeto BeeWare?
+---
+sort_key: 4
+---
+body: O BeeWare não é uma simples ferramenta ou biblioteca - é uma coleção de projetos que podem ser usados para ajudar a desenvolver, debugar e disponibilizar software Python. Cada ferramenta segue a filosofia Unix de fazzer uma coisa apenas e bem. Cada ferramenta pode ser utilizada de forma isolada ou pode-se combinar várias provendo um rico pacote de ferramentas de programação.

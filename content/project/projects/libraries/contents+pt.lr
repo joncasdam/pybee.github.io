@@ -1,0 +1,9 @@
+_model: project-type
+---
+title: Bibliotecas
+---
+short_description: Coleções de código reutilizável
+---
+sort_key: 3
+---
+description: Bibliotecas são blocos reutilizáveis de código que podem ser usados em um projeto. As Bibliotecas serão, geralmente, instaladas como dependências de ferramentas, aplicações ou outras bibliotecas.

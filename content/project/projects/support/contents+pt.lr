@@ -1,0 +1,9 @@
+_model: project-type
+---
+title: Suporte
+---
+short_description: Python para todas as estações
+---
+sort_key: 6
+---
+description: Projetos Suporte são pacotes pré-aglutinados de artefatos compilados que são necessários para executar Python em uma plataforma específica.

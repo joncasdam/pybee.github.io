@@ -1,0 +1,9 @@
+_model: project-type
+---
+title: Ferramentas
+---
+short_description: Projetos para auxiliar o desenvolvimento
+---
+sort_key: 2
+---
+description: Uma ferramenta é uma classe especial de aplicação, pois é instalada em um ambiente virtual Python. Ferramentas são usadas para auxiliar o desenvolvimento de aplicações standalone, nos papéis de depuração e testes do pacote.

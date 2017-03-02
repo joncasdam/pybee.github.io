@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="row">
+  <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+    {{ this.body }}
+    <p>Cada projeto da suite BeeWare se encaixa em um dos seguintes papéis:</p>
+  </div>
+</div>
+<div class="row project-type">
+  {% for child in this.children %}
+    {% if child._id != 'attic' %}
+  <div class="col-md-4">
+    <h3><a href="{{ child|url }}">{{ child.title }}</a></h3>
+    <p>{{ child.description }}</p>
+  </div>
+    {% endif %}
+    {% if loop.index == 3 %}
+</div>
+<div class="row project-type">
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+    <p>Há também um <a href="/project/projects/attic/">sótão</a> onde projetos velhos e experimentais são mantidos. Esses projetos foram antes parte da suite BeeWare, mas não são mais mantidos. Se você se interessar em assumir a manutenção de um projeto no sótão, por favor <a href="mailto:russell@pybee.org">entre em contato</a>.
+  </div>
+</div>
+
+{% endblock %}

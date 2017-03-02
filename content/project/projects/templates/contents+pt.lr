@@ -1,0 +1,11 @@
+_model: project-type
+---
+title: Templates
+---
+short_description: "C is for Cookie, is good enough for me..."
+---
+sort_key: 5
+---
+description: Templates são `Cookiecutter`_: configurações para geração de código de preparação, necessário para rodar um projeto Python, como uma aplicação, em uma plataforma específica.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter

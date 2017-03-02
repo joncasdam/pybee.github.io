@@ -1,0 +1,9 @@
+_model: project-type
+---
+title: Pontes
+---
+short_description: Indo bravamente onde nenhum Python já esteve
+---
+sort_key: 4
+---
+description: Uma ponte é uma combinação de ferramenta & biblioteca para ser usada para executar Python onde CPython não pode ser executado. A ponte provê o mecanismo para executar código Python em ambiente com um runtime diferente.
