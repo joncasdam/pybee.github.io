@@ -1,0 +1,19 @@
+_model: page
+---
+_template: beeware.html
+---
+title: Projeto BeeWare
+---
+summary: O que é o projeto BeeWare?
+---
+sort_key: 3
+---
+gutter:
+
+Conheça Brutus
+================
+.. image:: /static/images/brutus-128.png
+
+Brutus, a abelha, é o mascote do projeto BeeWare. Ele é uma abelha operária bem ocupada.
+
+Curiosidade: uma pessoa que cuida de abelhas é chamada de **apiarista** - um nome que o projeto BeeWare usa para descrever o time principal. Isso também reflete o relacionamento que o time principal deseja tem com a comunidade - somos pastores da comunidade e proveremos direção, porém nós sabemos que o trabalho real é feito pela comunidade como um todo.
