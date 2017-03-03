@@ -8,22 +8,22 @@ title: ...escrever um app nativo para iOS
 ---
 body:
 
-Although Apple only promotes Objective-C and Swift for iOS development, you can use any language that compiles with the `clang` toolchain. `Python Apple support`_ is a copy of CPython compiled for Apple platforms, including iOS. This package provides a `Python.framework` that can be dropped directly into an Xcode project. This allows you to embed a Python interpreter into your iOS application, which, in turn, means you can run Python code from inside your iOS application.
+Embora a Apple apenas promova Objective-C e Swift para desenvolvimento iOS, você pode user qualquer linguagem que compile com  `clang`. `Python Apple support`_ é um compilador de CPython para plataformas Apple, incluindo iOS. Esse pacote fornece um `Python.framework` que pode ser puxado diretamente em um projeto no Xcode. Isso permite voê embedar um interpretador Python em sua aplicação iOS, o que, por sua vez, significa que você pode rodar código Python de dentro de sua aplicação iOS.
 
-However, it's not much use being able to run Python code if you can't access system libraries. That's where `Rubicon`_ comes in. Rubicon is a bridge library that gives you transparent access to all the native Objective C classes that iOS provides. Using this, you can write an iOS application directly against the native iOS APIs.
+Contudo, não há muita utilidade em ser capaz de rodar código Python e não pode acessar as bibliotecas do sistema. É ai que entra `Rubicon`_. Rubicon é uma biblioteca ponte que dá acesso transparente à todas as classes Objective-C nativas que o iOS fornece. Usando isso você pode escrever uma aplicação iOS direta em relação às APIs nativas do iOS.
 
-Once you've written your native iOS application, you can use `Briefcase`_ to package your Python code as an iOS application bundle. Briefcase takes the distutils `setup.py` definition for your Python project, and uses that metadata to generate a stub iOS Xcode project, and add your Python code and dependencies so that they will be found when you run your the Android project. The stub project is generated using the `Python iOS template`_.
+Uma vez que você tenha escrito sua aplicação iOS nativa, voê pode usar `Briefcase`_ para enviar seu código Python como um um pacote de aplicação iOS. O Briefcase pega a definição distutils `setup.py` para seu projeto Python e usa esse metadado para gerar um projeto iOS stub no Xcode, e então adiciona seu código Python e suas dependências de forma que sejam encontrados ao rodar seu projeto iOS. O projeto stub é gerado usando o `Python iOS template`_.
 
-.. _Python Apple support: /project/projects/support/python-apple-support
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python iOS template: /project/projects/templates/python-ios-template
+.. _Python Apple support: /pt_BR/project/projects/support/python-apple-support
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python iOS template: /pt_BR/project/projects/templates/python-ios-template
 
 ---
 gutter:
 
-Relevant projects
-------------------
+Projetos relevantes
+--------------------
 
 .. image:: /static/images/defaultlogo.png
    :height: 32px
@@ -53,8 +53,8 @@ Relevant projects
 
 `Python iOS template`_
 
-.. _Python Apple support: /project/projects/support/python-apple-support
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python iOS template: /project/projects/templates/python-ios-template
+.. _Python Apple support: /pt_BR/project/projects/support/python-apple-support
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python iOS template: /pt_BR/project/projects/templates/python-ios-template
 
