@@ -1,0 +1,22 @@
+name: Python Android Template
+---
+project_type: template
+---
+maturity: alpha
+---
+languages: java, py
+---
+platforms: android
+---
+short_description: Um template cookiecutter para criação de um projeto Android rodando código Python.
+---
+description:
+
+Um template para criação de aplicações Python que rodarão em dispositivos Android, tais como telefones e tablets.
+
+---
+help_required:
+---
+incomplete: yes
+---
+customlogo: yes
