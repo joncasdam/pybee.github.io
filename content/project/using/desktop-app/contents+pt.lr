@@ -8,22 +8,22 @@ incomplete: no
 ---
 body:
 
-To develop a cross platform desktop app, you need to use a cross platform widget toolkit - `Toga`_. Toga abstracts away the differences between the various platforms, providing a common Python API for app development.
+Para desenvolver uma aplicação para multi-plataformas desktop, você precisará usar um kit de ferramentas multi-plataforma - `Toga`_. Toga abstrai as diferenças entre várias plataformas fornecendo uma API comum Python para o desenvolvimento da aplicação.
 
-On macOS, this API uses the capabilities of `Rubicon`_ to access native system libraries. Rubicon is a bridge library that gives you transparent access to all the native Objective C classes that iOS provides. On Linux, native Python bindings for GTK+ are used. On Windows, ctypes is used to call Win32 C APIs directly.
+No macOS, essa API usa as capacidades do `Rubicon`_  para acessar bibliotecas nativas do sistema. Rubicon é uma biblioteca ponte que te dá acesso transparente a todas as classes Objective-C que o iOS fornece. No Linux, ligações Python com GTK+ são usadas. No Windows, o ctypes é usado para chamar diretamente as APIs Win32 C.
 
-Once you've written your mobile application, you can use `Briefcase`_ to package your Python code for specific platforms. Briefcase takes the distutils `setup.py` definition for your Python project, and uses that metadata to generate a stub project, compile your Python code, and place the compiled artefacts so that they will be found when you run the app. The stub project is generated using the `Python macOS template`_.
+Uma vez que você tenha escrito ua aplicação mobile, você pode usar `Briefcase`_ para fazer um pacote de código Python para plataformas específicas. Briefcase pega a definição distutils `setup.py` de seu projeto Python e usa os metadados para gerar um projeto stub, compila seu código Python e aloca os artefatos compilados de forma que eles sejam encontrado quando você rodar sua aplicação. O projeto stub é gerado usando o `Python macOS template`_.
 
-.. _Toga: /project/projects/libraries/toga
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python macOS template: /project/projects/templates/python-macos-template
+.. _Toga: /pt_BR/project/projects/libraries/toga
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python macOS template: /pt_BR/project/projects/templates/python-macos-template
 
 ---
 gutter:
 
-Relevant projects
-------------------
+Projetos relevantes
+--------------------
 
 .. image:: /project/projects/libraries/toga/toga.png
    :alt: Toga icon
@@ -53,8 +53,8 @@ Relevant projects
 
 `Python macOS template`_
 
-.. _Toga: /project/projects/libraries/toga
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _VOC: /project/projects/bridges/voc
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python macOS template: /project/projects/templates/python-macos-template
+.. _Toga: /pt_BR/project/projects/libraries/toga
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _VOC: /pt_BR/project/projects/bridges/voc
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python macOS template: /pt_BR/project/projects/templates/python-macos-template
