@@ -19,15 +19,27 @@
   <div class="col-sm-12 col-md-8">
     {{ incomplete(this) }}
     {% if "attic" in this.maturity %}
+        {% if this.alt == 'pt' %}
+    <p><i>Esse projeto está classificado como <a href="/pt_BR/project/projects/attic">no sótão</a>. Não está mais sendo ativamente mantido.</i></p>
+        {% else %}
     <p><i>This project is classified as <a href="/project/projects/attic">in the attic</a>. It is no longer actively maintained</i></p>
+        {% endif %}
     <hr>
     {% endif %}
     {% if this.project_type == "template" %}
+        {% if this.alt == 'pt' %}
+    <p>Esse projeto é um <a href="https://github.com/audreyr/cookiecutter">CookieCutter</a> template para um projeto stub.</p>
+        {% else %}
     <p>This project is a <a href="https://github.com/audreyr/cookiecutter">CookieCutter</a> template for a stub project.</p>
+        {% endif %}
     <hr>
     {% endif %}
     {% if this.project_type == "support" %}
+        {% if this.alt == 'pt' %}
+    <p>Esse projeto é uma biblioteca de suporte. Seu propósito é ser usado em conjunto com um projeto template para a mesma plataforma.</p>
+        {% else %}
     <p>This project is a support library. It is intended to be used in conjunction with a template project for the same platform.</p>
+        {% endif %}
     <hr>
     {% endif %}
 
@@ -35,25 +47,42 @@
     <p>{{ this.description }}</p>
 
     {% if this.help_required %}
-    <h3>How to help</h3>
+    <h3>{% if this.alt == 'pt' %}Como ajudar{% else %}How to help{% endif %}</h3>
     <p>{{ this.help_required }}</p>
     {% endif %}
 
     {% if this.pun %}
+        {% if this.alt == 'pt' %}
+    <h3>Ta, mas por que chamar de "{{this.name}}"?</h3>
+        {% else %}
     <h3>So, why is it called "{{this.name}}"?</h3>
+        {% endif %}
     <p>{{ this.pun }}</p>
     {% endif %}
   </div>
   <div class="col-sm-12 col-md-4 gutter project-gutter">
     <div><img class="img-fluid center-block" {% if this.customlogo %}src="./{{ this._id }}.png" {% else %} src="/static/images/defaultlogo.png"{% endif %}></div>
     <p><a href="https://github.com/pybee/{{ this._id }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i> Source Code</a></p>
-    {% if this.rtfd_name %}<p><a href="https://{{ this.rtfd_name }}.readthedocs.io/"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Documentation</a></p>{% endif %}
+    {% if this.rtfd_name %}
+        {% if this.alt == 'pt' %}
+        <p><a href="https://{{ this.rtfd_name }}.readthedocs.io/"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Documentação</a></p>
+        {% else %}
+        <p><a href="https://{{ this.rtfd_name }}.readthedocs.io/"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Documentation</a></p>
+        {% endif %}
+    {% endif %}
     <hr>
     <dl>
+        {% if this.alt == 'pt' %}
+        {{ badge("Tipo de Projeto", this.project_type) }}
+        {{ badge("Maturidade", this.maturity) }}
+        {{ badge("Linguagem", this.languages) }}
+        {{ badge("Plataforma", this.platforms) }}
+        {% else %}
         {{ badge("Project Type", this.project_type) }}
         {{ badge("Maturity", this.maturity) }}
         {{ badge("Language", this.languages) }}
         {{ badge("Platform", this.platforms) }}
+        {% endif %}
     </dl>
     <hr>
     <a href="https://labhr.github.io/hatrack/#repo=pybee/{{ this._id }}">Contributors</a>
