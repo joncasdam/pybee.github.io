@@ -1,0 +1,17 @@
+name: Python Apple Support
+---
+languages: py, c
+---
+maturity: beta
+---
+platforms: macOS, iOS, tvOS, watchOS
+---
+project_type: support
+---
+short_description: Um meta-pacote para criar uma versão do Python que possa ser embutida em projetos macOS, iOS tvOS ou watchOS.
+---
+incomplete: yes
+---
+description: Um meta-pacote para criar uma versão do Python que possa ser embutida em projetos macOS, iOS tvOS ou watchOS.
+---
+customlogo: yes
