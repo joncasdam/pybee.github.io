@@ -1,0 +1,21 @@
+name: Briefcase
+---
+project_type: tool
+---
+maturity: beta
+---
+languages: py
+---
+platforms: macOS, iOS, android, tvOS
+---
+short_description: Ferramentas de suporte à conversão de um projeto Python em um aplicação nativa independente.
+---
+description: Um extensão distutils para dar assistência na hora de criar um pacote de projeto Python como uma aplicação independente.
+---
+help_required: 
+---
+incomplete: yes
+---
+rtfd_name: briefcase
+---
+customlogo: yes
