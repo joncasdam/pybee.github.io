@@ -1,0 +1,38 @@
+name: Rubicon
+---
+project_type: bridge
+---
+maturity: production
+---
+languages: py, m, java
+---
+platforms: macOS, iOS
+---
+short_description: Uma biblioteca ponte entre Python e outros runtimes de linguagens.
+---
+description:
+
+Rubicon engloba múltiplos parsers distintos:
+
+`rubicon-objc`_
+ - Uma interface ponte entre Python e Objective-C.
+
+`rubicon-java`_
+ - Uma interface ponte entre Python e Java.
+
+.. _rubicon-objc: https://github.com/pybee/rubicon-objc
+.. _rubicon-java: https://github.com/pybee/rubicon-java
+---
+help_required: 
+---
+pun:
+
+Durante a república romana, o rio Rubicon marcava o limite entre a província romana de Cisalpine Gaul ao nordeste e a Itália de fato (controla por Roma) ao sul.
+
+Em 49BCE, Júlio César liderou uma legião apenas, Legio XIII Gemina, até ao sul sobre o Rubicon desde Cisalpine Gaul para Itália seguindo seu rumo até Roma. Ao fazê-lo, ele (deliberadamente) quebrou a lei do império e tornou inevitável um conflito armado com o Senado Romano. De acordo com Suetonius, ao cruzarem o rio, Julio César proferiu a famosa frase •ālea iacta est* ("a sorte está lançada").
+
+Mas você não vai cruzar a Rubicon, mas vai precisar de uma ponte.
+---
+rtfd_name: rubicon-objc
+---
+customlogo: yes
