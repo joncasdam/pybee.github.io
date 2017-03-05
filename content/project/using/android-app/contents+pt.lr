@@ -8,21 +8,21 @@ title: ...escrever um app nativo para Android
 ---
 body:
 
-Android's preferred language of implementation is Java - so if you want to write an Android application in Python, you need to have a way to run your Python code on a Java Virtual Machine. This is what `VOC`_ does. VOC is a transpiler - it takes Python source code, compiles it to CPython Bytecode, and then transpiles that bytecode into Java-compatible bytecode. The end result is that your Python source code files are compiled *directly* to a Java `.class` file, which can be packaged into an Android application.
+A linguagem preferida de implementação do Android é Java - então se você quer escrever uma aplicação em Python, você precisa ter um jeito de rodar seu código Python numa Máquina Virtual Java. Isso é o que `VOC`_ faz. VOC é um transpilador - ele pega o código fonte Python, compila para bytecode CPython, e então transpila esse bytecode num bytecode compatível com Java. O resultado final é que os arquivos de seu código fonte Python são compilados *diretamente* para um arquivo Java `.class`, que por sua vez pode ser alocado dentro de uma aplicação Android.
 
-VOC also allows you to access native Java objects as if they were Python objects, implement Java interfaces with Python classes, and subclass Java classes with Python classes. Using this, you can write an Android application directly against the native Android APIs.
+VOC permite também que você acesse objetos nativos do Java como se fossem objetos Python, implementa interfaces Java com classes Python, e cria subclasses de classes Java com classes Python. Usando isso, você pode escrever uma aplicação Android direta em relação às APIs Android.
 
-Once you've written your native Android application, you can use `Briefcase`_ to package your Python code as an Android application. Briefcase takes the distutils `setup.py` definition for your Python project, and uses that metadata to generate a stub Android project, compile your Python code, and place the compiled artefacts so that they will be found when you run your Android project. The stub project is generated using the `Python Android template`_.
+Um vez que tenha escrito sua aplicação nativa Android, você pode usar `Briefcase`_ para preparar o pacote de seu código Python como uma aplicação Android. Briefcase pega a definição distutils `setup.py` para seu projeto Python, e usa os metadados para gerar um projeto Android stub, compila seu código Python e aloca os artefatos compilados de forma que eles sejam encontrado quando você rodar seu projeto Android. O projeto stub é gerado usando o `Python Android template`_.
 
-.. _VOC: /project/projects/bridges/voc
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python Android template: /project/projects/templates/python-android-template
+.. _VOC: /pt_BR/project/projects/bridges/voc
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python Android template: /pt_BR/project/projects/templates/python-android-template
 
 ---
 gutter:
 
-Relevant projects
-------------------
+Projetos relevantes
+--------------------
 
 .. image:: /project/projects/bridges/voc/voc.png
    :alt: VOC icon
@@ -45,7 +45,7 @@ Relevant projects
 
 `Python Android template`_
 
-.. _VOC: /project/projects/bridges/voc
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python Android template: /project/projects/templates/python-android-template
+.. _VOC: /pt_BR/project/projects/bridges/voc
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python Android template: /pt_BR/project/projects/templates/python-android-template
 
