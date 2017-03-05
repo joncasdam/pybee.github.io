@@ -8,24 +8,24 @@ title: ...escrever um app mobile multi-platforma
 ---
 body:
 
-To develop a cross platform mobile app, you need to use a cross platform widget toolkit - `Toga`_. Toga abstracts away the differences between the various mobile platforms, providing a common Python API for app development.
+Para desenvolver uma aplicação para multi-plataformas mobile, você precisará usar um kit de ferramentas multi-plataforma - `Toga`_. Toga abstrai as diferenças entre várias plataformas fornecendo uma API comum Python para o desenvolvimento da aplicação.
 
-This API uses the capabilities of `Rubicon`_ and `VOC`_ to access native system libraries. Rubicon is a bridge library that gives you transparent access to all the native Objective C classes that iOS provides. VOC, on the other hand VOC is a transpiler - it takes Python source code, compiles it to CPython Bytecode, and then transpiles that bytecode into Java-compatible bytecode. The end result is that your Python source code files are compiled *directly* to a Java `.class` file, which can be packaged into an Android application. VOC also allows you to access native Java objects as if they were Python objects, implement Java interfaces with Python classes, and subclass Java classes with Python classes. Using this, you can write an Android application directly against the native Android APIs.
+Essa API usa as capacidades do `Rubicon`_ e `VOC`_ para acessar bibliotecas nativas do sistema. Rubicon é uma biblioteca ponte que te dá acesso transparente a todas as classes naticas do Objective C que o iOS fornece. VOC, por outr lado, é um transpilador - ele pega o código fonte Python, compila para bytecode CPython, e então transpila esse bytecode num bytecode compatível com Java. O resultado final é que os arquivos de seu código fonte Python são compilados *diretamente* para um arquivo Java `.class`, que por sua vez pode ser alocado dentro de uma aplicação Android. VOC permite também que você acesse objetos nativos do Java como se fossem objetos Python, implementa interfaces Java com classes Python, e cria subclasses de classes Java com classes Python. Usando isso, você pode escrever uma aplicação Android direta em relação às APIs Android.
 
-Once you've written your mobile application, you can use `Briefcase`_ to package your Python code for specific platforms. Briefcase takes the distutils `setup.py` definition for your Python project, and uses that metadata to generate a stub iOS or Android project, compile your Python code, and place the compiled artefacts so that they will be found when you run the app. The stub project is generated using the `Python iOS template`_ and `Python Android template`_.
+Um vez que tenha escrito sua aplicação nativa Android, você pode usar `Briefcase`_ para preparar o pacote de seu código Python como uma aplicação Android. Briefcase pega a definição distutils `setup.py` para seu projeto Python, e usa os metadados para gerar um projeto stub para iOS ou Android, compila seu código Python e aloca os artefatos compilados de forma que eles sejam encontrado quando você rodar a aplicação. O projeto stub é gerado usando o `Python iOS template`_ e `Python Android template`_.
 
-.. _Toga: /project/projects/libraries/toga
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _VOC: /project/projects/bridges/voc
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python Android template: /project/projects/templates/python-android-template
-.. _Python iOS template: /project/projects/templates/python-ios-template
+.. _Toga: /pt_BR/project/projects/libraries/toga
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _VOC: /pt_BR/project/projects/bridges/voc
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python Android template: /pt_BR/project/projects/templates/python-android-template
+.. _Python iOS template: /pt_BR/project/projects/templates/python-ios-template
 
 ---
 gutter:
 
-Relevant projects
-------------------
+Projetos relevantes
+--------------------
 
 .. image:: /project/projects/libraries/toga/toga.png
    :height: 32px
@@ -69,9 +69,9 @@ Relevant projects
 
 `Python Android template`_
 
-.. _Toga: /project/projects/libraries/toga
-.. _Rubicon: /project/projects/bridges/rubicon
-.. _VOC: /project/projects/bridges/voc
-.. _Briefcase: /project/projects/tools/briefcase
-.. _Python iOS template: /project/projects/templates/python-ios-template
-.. _Python Android template: /project/projects/templates/python-android-template
+.. _Toga: /pt_BR/project/projects/libraries/toga
+.. _Rubicon: /pt_BR/project/projects/bridges/rubicon
+.. _VOC: /pt_BR/project/projects/bridges/voc
+.. _Briefcase: /pt_BR/project/projects/tools/briefcase
+.. _Python iOS template: /pt_BR/project/projects/templates/python-ios-template
+.. _Python Android template: /pt_BR/project/projects/templates/python-android-template
